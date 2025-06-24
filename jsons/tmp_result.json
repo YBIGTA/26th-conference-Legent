@@ -1,19 +1,18 @@
 {
-  "accident_summary": "직진 신호에 횡단보도를 통과하던 party_1 차량이, 왼쪽에서 자전거를 타고 무단횡단하던 party_2와 충돌한 사고.",
+  "accident_summary": "신호등이 있는 교차로의 횡단보도에서, 차량 녹색 신호에 따라 직진하던 party_1 차량과 좌측에서 횡단보도를 이용해 무단횡단하던 party_2 자전거가 충돌한 사고입니다.",
   "road_and_environment": {
     "road_type": "일반도로",
     "intersection_type": "사거리",
-    "road_hierarchy": "대로/소로 구분 명확",
+    "road_hierarchy": "확인 불가",
     "traffic_control": {
       "traffic_light_presence": "있음",
       "traffic_signs": [
-        "유턴금지 전방 300m",
-        "주차금지"
+        "유턴금지(전방 300m)"
       ],
       "road_markings": [
         "횡단보도",
         "차선(백색 점선)",
-        "차선(백색 실선)"
+        "정지선"
       ]
     },
     "conditions": {
@@ -26,13 +25,13 @@
       "party_id": "party_1 (블랙박스 차량)",
       "type": "자동차",
       "maneuver": "직진",
-      "maneuver_detail": "편도 3차로로 추정되는 도로의 2차로를 따라 녹색 신호에 교차로 횡단보도를 통과 중",
+      "maneuver_detail": "편도 2차로 도로의 2차로를 따라 교차로 횡단보도를 향해 직진 주행",
       "lane": "2차로",
       "signal_status": "녹색",
       "violations": [
         {
           "violation_type": "안전운전의무 불이행",
-          "evidence": "전방 주시 의무가 있으나, 좌측에서 횡단하는 자전거를 사전에 인지하고 충돌을 회피하지 못함."
+          "evidence": "차량 신호가 녹색이었으나, 횡단보도 진입 시 전방 및 좌우 주시 태만으로 무단횡단하는 자전거를 사전에 인지하고 대비하지 못함."
         }
       ]
     },
@@ -40,25 +39,25 @@
       "party_id": "party_2",
       "type": "자전거",
       "maneuver": "무단횡단",
-      "maneuver_detail": "횡단보도 위에서 자전거를 탄 채로 도로를 횡단함.",
+      "maneuver_detail": "횡단보도를 이용하여 도로를 좌측에서 우측으로 탑승한 채 주행하여 횡단함",
       "lane": "횡단보도",
       "signal_status": "적색(추정)",
       "violations": [
         {
           "violation_type": "신호위반",
-          "evidence": "party_1의 진행 방향 차량 신호가 녹색인 것으로 보아, 자전거가 횡단하던 횡단보도의 보행자 신호는 적색이었을 것으로 강하게 추정됨."
+          "evidence": "차량의 진행 신호가 녹색인 상태에서 횡단보도를 횡단하였으므로, 보행자/자전거 횡단 신호를 위반한 것으로 강력히 추정됨."
         },
         {
           "violation_type": "자전거 횡단방법 위반",
-          "evidence": "도로교통법에 따라 자전거 운전자는 횡단보도를 이용하여 도로를 횡단할 때 자전거에서 내려서 끌고 보행해야 하나, 이를 위반하고 자전거를 탑승한 채로 주행함."
+          "evidence": "도로교통법 제13조의2 제6항에 따라 자전거 운전자는 횡단보도를 이용하여 도로를 횡단할 때 자전거에서 내려서 끌고 보행해야 하나, 이를 위반하고 탑승한 채로 주행함."
         }
       ]
     }
   ],
   "collision_dynamics": {
-    "entry_order": "동시 진입",
-    "point_of_impact_party_1": "전면 범퍼 중앙",
-    "point_of_impact_party_2": "자전거 좌측면 및 탑승자",
-    "chronological_description": "party_1 차량이 녹색 신호에 따라 2차로를 직진하며 횡단보도에 접근하던 중, party_1의 진행 방향 좌측에서 party_2가 자전거를 탄 채로 횡단보도를 가로질러 진입하였다. party_1이 충돌을 회피하지 못하고 차량 전면으로 party_2의 자전거 좌측 부분을 충돌하였다. 충격으로 party_2는 party_1 차량의 보닛 위로 넘어졌다가 전방 도로로 떨어졌고, 자전거는 우측으로 튕겨 나갔다."
+    "entry_order": "확인 불가",
+    "point_of_impact_party_1": "전면 범퍼 중앙부",
+    "point_of_impact_party_2": "자전거 우측 측면",
+    "chronological_description": "party_1 차량이 편도 2차로 중 2차로를 따라 녹색 신호에 직진하던 중, 1차로에 있던 차량들 사이에서 party_2 자전거가 횡단보도를 이용해 갑자기 나타남. party_1이 이를 발견하고 제동을 시도하는 것으로 보이나 피하지 못하고, party_1의 전면으로 횡단 중인 party_2 자전거의 측면을 충돌함. 충돌의 충격으로 party_2 운전자는 party_1 차량의 보닛 위로 넘어졌다가 전방 도로로 떨어짐."
   }
 }
