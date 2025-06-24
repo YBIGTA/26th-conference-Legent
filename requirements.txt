@@ -2,3 +2,5 @@ python-dotenv
 openai
 streamlit
 google-generativeai
+aioboto3
+ollama
