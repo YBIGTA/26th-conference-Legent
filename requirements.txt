@@ -4,3 +4,4 @@ streamlit
 google-generativeai
 aioboto3
 ollama
+numpy
