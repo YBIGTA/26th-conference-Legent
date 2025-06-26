@@ -608,7 +608,12 @@ pytest
 
 ## Acknowledgments
 
-- Credit `contributors`, `inspiration`, `references`, etc.
+- **Jungmook Kang** — Prompt engineering, frontend  
+- **Junho Kim** — RAG pipeline  
+- **Jungyang Park** — RAG pipeline, graph generation  
+- **Haneul Park** — Video generation  
+- **Jaeyoung Lee** — Document parsing, video generation, frontend  
+- **Dogeun Lee** — Frontend
 
 <div align="right">
 
