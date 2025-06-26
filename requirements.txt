@@ -1,6 +1,57 @@
+# Core Dependencies
 python-dotenv
-openai
 streamlit
 google-generativeai
-aioboto3
+requests
+beautifulsoup4
+
+# Data Science & ML
+numpy
+pandas
+torch
+accelerate
+transformers
+
+# AI & LLM APIs
+openai
+zhipuai
 ollama
+aioboto3
+google-cloud-texttospeech
+
+# Progress & Utilities
+tqdm
+tiktoken
+pydantic
+tenacity
+aiohttp
+jsonlines
+
+# Database Drivers
+chromadb
+pymilvus
+pymongo
+neo4j
+oracledb
+sqlalchemy
+pymysql
+hnswlib
+
+# Graph Libraries
+networkx
+graspologic
+nano-vectordb
+pyvis
+
+# Media Processing
+moviepy
+opencv-python
+pydub
+mutagen
+
+# NLP & Text Processing
+nltk
+PyPDF2
+
+# Other utilities
+xxhash
