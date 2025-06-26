@@ -608,11 +608,11 @@ pytest
 
 ## Acknowledgments
 
-- **Jungmook Kang** — Prompt engineering, frontend  
-- **Junho Kim** — RAG pipeline  
-- **Jungyang Park** — RAG pipeline, graph generation  
-- **Haneul Park** — Video generation  
-- **Jaeyoung Lee** — Document parsing, video generation, frontend  
+- **Junho Kim** — Team Leader, RAG pipeline  
+- **Jungmook Kang** — Prompt Engineering, Frontend  
+- **Jungyang Park** — RAG Pipeline, Graph Generation  
+- **Haneul Park** — Video Generation  
+- **Jaeyoung Lee** — Document Parsing, Video Generation, Frontend  
 - **Dogeun Lee** — Frontend
 
 <div align="right">
