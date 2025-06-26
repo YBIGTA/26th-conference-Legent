@@ -6,10 +6,12 @@ from datetime import datetime
 from typing import List, Dict
 
 # Set up Google Cloud credentials automatically
-CREDENTIALS_PATH = os.path.join(os.path.dirname(__file__), "legent-463917-0e7c6442775b.json")
+CREDENTIALS_PATH = os.path.join(os.path.dirname(__file__), "..", "..", "legent-463917-0e7c6442775b.json")
 if os.path.exists(CREDENTIALS_PATH):
     os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = CREDENTIALS_PATH
     print(f"🔑 [DEBUG] Using Google Cloud credentials: {CREDENTIALS_PATH}")
+else:
+    print(f"❌ [DEBUG] Google Cloud credentials not found at: {CREDENTIALS_PATH}")
 
 try:
     from google.cloud import texttospeech

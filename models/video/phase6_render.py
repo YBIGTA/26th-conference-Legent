@@ -301,7 +301,21 @@ def add_text_overlay(video_clip: VideoFileClip, text_config: dict) -> VideoFileC
         except Exception as e:
             print(f"❌ [DEBUG] TextClip creation failed: {e}")
             print(f"❌ [DEBUG] TextClip traceback: {traceback.format_exc()}")
-            raise
+            # 폰트 실패 시 폰트 없이 재시도
+            try:
+                text_clip = TextClip(
+                    text=text,
+                    font_size=fontsize,
+                    color=color,
+                    stroke_color=stroke_color,
+                    stroke_width=stroke_width,
+                    method='caption',
+                    size=(int(video_clip.w * 0.8), None)
+                ).with_duration(video_clip.duration).with_position(pos)
+                print(f"✅ [DEBUG] TextClip created successfully (without font)")
+            except Exception as e2:
+                print(f"❌ [DEBUG] TextClip creation failed even without font: {e2}")
+                raise
         
         # 비디오와 텍스트 합성
         print(f"🎨 [DEBUG] Compositing video and text")
@@ -347,7 +361,7 @@ def create_outro_clip(outro_config: dict) -> Optional[VideoFileClip]:
                 color='white',
                 stroke_color='black',
                 stroke_width=3,
-                font='NanumGothic',
+                font='NanumGothic',  
                 method='caption',
                 size=(1920, None)
             ).with_duration(duration).with_position('center')
@@ -355,7 +369,21 @@ def create_outro_clip(outro_config: dict) -> Optional[VideoFileClip]:
         except Exception as e:
             print(f"❌ [DEBUG] Outro text clip failed: {e}")
             print(f"❌ [DEBUG] Outro text traceback: {traceback.format_exc()}")
-            raise
+            # 폰트 실패 시 폰트 없이 재시도
+            try:
+                text_clip = TextClip(
+                    text=text,
+                    font_size=60,
+                    color='white',
+                    stroke_color='black',
+                    stroke_width=3,
+                    method='caption',
+                    size=(1920, None)
+                ).with_duration(duration).with_position('center')
+                print(f"✅ [DEBUG] Outro text clip created (without font)")
+            except Exception as e2:
+                print(f"❌ [DEBUG] Outro text clip failed even without font: {e2}")
+                raise
         
         # 합성
         print(f"🎥 [DEBUG] Compositing outro background and text")

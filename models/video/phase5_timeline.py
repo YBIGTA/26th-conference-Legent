@@ -131,8 +131,8 @@ def create_final_timeline(script_tts_info: dict, video_path: str) -> dict:
   "video_source_file": "{video_path}",
   "title": "교통사고 분석 - 한문철TV 스타일",
   "final_liability_ratio": {{
-    "car": 0,
-    "bicycle": 100
+    "car": 20,
+    "bicycle": 80
   }},
   "summary_narration": "전체 사고 요약",
   "scenes": [
@@ -267,8 +267,8 @@ def create_fallback_timeline(script_tts_info: dict, video_path: str, video_info:
         "video_source_file": video_path,
         "title": "교통사고 분석 - 자동 생성",
         "final_liability_ratio": {
-            "car": 0,
-            "bicycle": 100
+            "car": 20,
+            "bicycle": 80 
         },
         "summary_narration": "교통사고 상황을 분석한 영상입니다.",
         "scenes": scenes,
