@@ -1,0 +1,65 @@
+{
+  "accident_summary": "녹색 신호에 교차로 횡단보도를 직진하던 party_1 차량이, 우측에서 자전거를 타고 횡단하던 party_2와 충돌한 사고",
+  "road_and_environment": {
+    "road_type": "일반도로",
+    "intersection_type": "사거리",
+    "road_hierarchy": "대로/소로 구분 명확",
+    "traffic_control": {
+      "traffic_light_presence": "있음",
+      "traffic_signs": [
+        "주차금지",
+        "유턴금지(전방 300m)"
+      ],
+      "road_markings": [
+        "중앙선(백색 실선)",
+        "차선(백색 점선)",
+        "횡단보도",
+        "직진 및 우회전 표시"
+      ]
+    },
+    "conditions": {
+      "weather": "맑음",
+      "time_of_day": "주간"
+    }
+  },
+  "parties": [
+    {
+      "party_id": "party_1 (블랙박스 차량)",
+      "type": "자동차",
+      "maneuver": "직진",
+      "maneuver_detail": "편도 다차로 도로의 우측 차로를 따라 교차로를 직진 주행 중",
+      "lane": "3차로(추정)",
+      "signal_status": "녹색",
+      "violations": [
+        {
+          "violation_type": "안전운전의무 불이행",
+          "evidence": "차량 신호가 녹색이더라도 횡단보도 통과 시 보행자나 다른 위험요소에 대한 주의 의무가 있으나, 전방에서 횡단하는 자전거를 미처 발견하지 못하고 충돌함."
+        }
+      ]
+    },
+    {
+      "party_id": "party_2",
+      "type": "자전거",
+      "maneuver": "기타",
+      "maneuver_detail": "자전거를 탑승한 채로 도로 우측에서 좌측으로 횡단보도를 이용하여 횡단함",
+      "lane": "횡단보도",
+      "signal_status": "적색(추정, party_1의 차량 신호가 녹색이므로 보행자 신호는 적색일 것으로 강하게 추정됨)",
+      "violations": [
+        {
+          "violation_type": "신호위반",
+          "evidence": "차량 진행 신호(녹색)에 횡단보도를 진입하여 횡단함."
+        },
+        {
+          "violation_type": "기타(자전거 횡단방법 위반)",
+          "evidence": "도로교통법 제13조의2 제6항에 따라 자전거 운전자가 횡단보도를 이용하여 도로를 횡단할 때에는 자전거에서 내려서 자전거를 끌고 보행하여야 하나, 이를 위반하고 자전거에 탑승한 채 주행함."
+        }
+      ]
+    }
+  ],
+  "collision_dynamics": {
+    "entry_order": "party_1 선진입",
+    "point_of_impact_party_1": "전면 범퍼 중앙",
+    "point_of_impact_party_2": "자전거 좌측면 중앙",
+    "chronological_description": "party_1 차량이 녹색 신호에 따라 편도 다차로 도로의 우측 차로로 횡단보도를 통과하던 중, 도로 우측에서 party_2(자전거)가 자전거에 탑승한 채로 횡단보도로 진입함. party_1 차량이 이를 발견하지 못하고 진행하다 차량 전면으로 자전거의 좌측면을 충돌함. 충격으로 party_2는 party_1 차량의 보닛 위로 넘어졌다가 전방 도로로 떨어졌으며, party_1 차량은 충돌 직후 현장에 정지함."
+  }
+}
