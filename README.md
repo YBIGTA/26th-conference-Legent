@@ -627,11 +627,6 @@ pytest
 
 [back-to-top]: https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square
 
-
----
-
-# test_legent
-
 ## streamlit 실행
 streamlit run app/app.py
 
