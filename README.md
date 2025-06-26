@@ -1,7 +1,7 @@
 <div id="top">
 
 <!-- HEADER STYLE: COMPACT -->
-<img src="readmeai/assets/logos/purple.svg" width="30%" align="left" style="margin-right: 15px">
+<img src="ybigta.jpg" width="30%" align="left" style="margin-right: 15px">
 
 # 26TH-CONFERENCE-LEGENT
 <em>Accelerate insights.  Transform justice.</em>
