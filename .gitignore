@@ -180,3 +180,6 @@ tests/test_tts_output/
 
 # credentials file
 models/video/legent-463917-0e7c6442775b.json
+
+output/
+tts_output/

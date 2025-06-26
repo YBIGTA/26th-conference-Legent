@@ -68,7 +68,7 @@ def tts_generate_from_script(script_data: dict, output_dir: str = "tts_output") 
     # TTS 설정
     voice = texttospeech.VoiceSelectionParams(
         language_code="ko-KR",
-        name="ko-KR-Chirp3-HD-Puck",  # 한문철 스타일에 맞는 음성
+        name="ko-KR-Chirp3-HD-Algenib",  # 한문철 스타일에 맞는 음성
         ssml_gender=texttospeech.SsmlVoiceGender.NEUTRAL,
     )
     
