@@ -61,15 +61,8 @@
 |      | Component       | Details                              |
 | :--- | :-------------- | :----------------------------------- |
 | ⚙️  | **Architecture**  | <ul><li>Modular design based on directories (e.g., `models`, `data`, `utils`)</li><li>Uses multiple libraries for different tasks (see Dependencies)</li><li>Likely uses a pipeline architecture for processing data and generating outputs</li></ul> |
-| 🔩 | **Code Quality**  | <ul><li>Unknown without inspecting the code directly</li><li>Potentially uses linters or formatters if best practices were followed</li><li>Requires code review to assess quality and style</li></ul> |
-| 📄 | **Documentation** | <ul><li>No clear documentation found in provided metadata</li><li>Potentially relies on comments within the code</li><li>Further investigation needed to assess documentation completeness</li></ul> |
 | 🔌 | **Integrations**  | <ul><li>Integrates with various APIs: OpenAI, Google Cloud Text-to-Speech,  ChromaDB, Milvus, Neo4j, etc.</li><li>Uses multiple databases: MongoDB, Oracle, MySQL</li><li>Leverages cloud services (Google Cloud)</li></ul> |
-| 🧩 | **Modularity**    | <ul><li>Evidence suggests modularity through directory structure and dependencies</li><li>Specific level of modularity needs further code inspection</li><li>Potentially uses design patterns for improved modularity</li></ul> |
-| 🧪 | **Testing**       | <ul><li>No information about testing frameworks or test coverage is available</li><li>Requires checking the codebase for tests (unit, integration, etc.)</li><li>Automated testing is likely necessary for a project of this complexity</li></ul> |
-| ⚡️  | **Performance**   | <ul><li>Performance depends heavily on the implementation and hardware used</li><li>Optimization techniques (e.g., vector databases, efficient algorithms) are likely employed</li><li>Performance testing and profiling are necessary for a quantitative assessment</li></ul> |
-| 🛡️ | **Security**      | <ul><li>Security measures are unknown without code review</li><li>API key management and secure data handling are critical</li><li>Requires assessment of vulnerabilities related to used libraries</li></ul> |
 | 📦 | **Dependencies**  | <ul><li>Many dependencies across various domains (NLP, databases, cloud services, audio/video processing)</li><li>See `requirements.txt` for a full list</li><li>Dependency management using `pip` is indicated</li></ul> |
-| 🚀 | **Scalability**   | <ul><li>Scalability depends on database and API choices</li><li>Cloud-based services offer potential for scalability</li><li>Needs analysis of the code's ability to handle increased data volume and user requests</li></ul> |
 
 ---
 
@@ -110,32 +103,6 @@
     │   └── zzam_tong
     ├── requirements.txt
     ├── tts_output
-    │   ├── scene01_20250625_220517.mp3
-    │   ├── scene01_20250625_234532.mp3
-    │   ├── scene01_20250626_110032.mp3
-    │   ├── scene01_20250626_121501.mp3
-    │   ├── scene01_20250626_121901.mp3
-    │   ├── scene02_20250625_220518.mp3
-    │   ├── scene02_20250625_234533.mp3
-    │   ├── scene02_20250626_110035.mp3
-    │   ├── scene02_20250626_121503.mp3
-    │   ├── scene02_20250626_121903.mp3
-    │   ├── scene03_20250625_220519.mp3
-    │   ├── scene03_20250625_234533.mp3
-    │   ├── scene03_20250626_110038.mp3
-    │   ├── scene03_20250626_121505.mp3
-    │   ├── scene03_20250626_121905.mp3
-    │   ├── scene04_20250625_220520.mp3
-    │   ├── scene04_20250625_234534.mp3
-    │   ├── scene04_20250626_110040.mp3
-    │   ├── scene04_20250626_121508.mp3
-    │   ├── scene04_20250626_121908.mp3
-    │   ├── scene05_20250625_220520.mp3
-    │   ├── scene05_20250625_234535.mp3
-    │   ├── scene05_20250626_110043.mp3
-    │   ├── scene05_20250626_121510.mp3
-    │   ├── scene05_20250626_121910.mp3
-    │   └── tts_manifest.json
     └── utils
         ├── __init__.py
         ├── accident_video_analyzer.py
@@ -589,14 +556,6 @@ pytest
 </details>
 
 <details closed>
-<summary>Contributor Graph</summary>
-<br>
-<p align="left">
-   <a href="https://github.com{/YBIGTA/26th-conference-Legent/}graphs/contributors">
-      <img src="https://contrib.rocks/image?repo=YBIGTA/26th-conference-Legent">
-   </a>
-</p>
-</details>
 
 ---
 
@@ -623,9 +582,6 @@ pytest
 
 
 [back-to-top]: https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square
-
-## streamlit 실행
-streamlit run app/app.py
 
 ## 전체 시스템 파이프라인
 
